@@ -1,0 +1,102 @@
+.name {
+    color: white;
+}
+
+body {
+    background-color:black;
+    color:gray;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a {     /* links within "nav" container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;  /* removes underline */
+    color: white;         /* by default, links are blue */
+}
+
+nav a:hover {   /* pseudo class */
+    border-bottom: orange solid;
+    font-size: 2em;
+    transition: .9s;    /* transition effect */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    color: aqua;
+    font-size: smaller;
+}
+
+.current {
+    color: orange;
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+}
+
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: white;
+}
+
+#table-header {
+    background-color: #00008B
+}
+
+.table-row {
+    background-color: aqua;
+}
+
+ul {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left
+}
+
+.hobby {
+    color: orange;
+}
+
+.hobby-content {
+    color: white;
+}
+
+#content {
+    text-align: center;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#index-body-main-div-blurb {
+    color: white;
+    padding-top: 50px;
+}
