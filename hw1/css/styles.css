@@ -1,0 +1,186 @@
+nav a {
+    font-family: "Orbitron", sans-serif;
+    color: #00ff41;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a.current {
+    border-bottom: 3px solid #00ff41;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px #00ff41;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #0d1117;
+    color: #d1d5db;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  color: #00ff41;
+  text-align: center;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #00ff41;
+    box-shadow: 0 0 8px #00ff41;
+    width: 70%;
+}
+
+nav {
+    font-family: "Open Sans", sans-serif;
+    color: #00ff41;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero-image {
+    display: block;
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.footer-text {
+    font-family: "Orbitron", sans-serif;
+    color: #00ff41;
+    text-align: center;
+    font-size: 14px;
+}
+
+.intro-card {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border: 2px solid #00ff41;
+    border-radius: 12px;
+
+    background-color: rgba(255,255,255,.03);
+
+    box-shadow: 0 0 15px rgba(0,255,65,.3);
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.language-card {
+    border: 2px solid #00ff41;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgba(255,255,255,.03);
+    box-shadow: 0 0 12px rgba(0,255,65,.3);
+}
+
+.language-card img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.language-card h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.language-card figure {
+    margin: 0;
+}
+
+.language-card p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 0px;
+}
+
+.language-card li {
+    text-align: left;
+    padding-left: 25px;
+    font-size: 20px;
+
+}
+
+.pros-cons-text {
+    text-align: left;
+    font-weight: bold;
+}
+
+.comparison-table {
+    width: 65%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0,255,65,.3);
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 2px solid #00ff41;
+    padding: 15px;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #00ff41;
+    color: #0d1117;
+    font-family: "Orbitron", sans-serif;
+}
+
+.comparison-table td {
+    background-color: rgba(255,255,255,.03);
+}
+
+.sources {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sources h3 {
+    font-family: "Orbitron", sans-serif;
+    color: #00ff41;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sources li {
+    margin: 5px 0;
+}
+
+.sources a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.sources a:hover {
+    text-decoration: underline;
+}
