@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #050816;
+    background-image: 
+        linear-gradient(rgba(5, 8, 22, 0.65), rgba(5, 8, 22, 0.9)),
+        url("../img/space-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+header {
+    padding: 35px 20px 20px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #38dff8;
+    text-shadow: 0 0 15px #38dff8;
+}
+
+h2 {
+    font-weight: normal;
+    color: #f4f4f4;
+}
+
+#main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.score-card {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #38dff8;
+    border-radius: 18px;
+    background-color: rgba(4, 12, 35, 0.85);
+    box-shadow: 0 0 18px rgba(56, 223, 248, 0.6);
+}
+
+.score-card h3 {
+    margin-top: 0;
+    color: #ffd84d;
+}
+
+.score-card span {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ff69f8;
+}
+
+.game-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 25px;
+    border: 2px solid #a855f7;
+    border-radius: 22px;
+    background-color: rgba(8, 15, 45, 0.88);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.7);
+}
+
+.guess-area,
+.feedback-area,
+.attempts-area {
+    width: 33%;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: rgba(3, 9, 28, 0.9);
+    border: 1px solid rgba(56, 223, 248, 0.45);
+}
+
+.game-card h3 {
+    color: #38dff8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+input {
+    width: 90%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #38dff8;
+    border-radius: 10px;
+    background-color: #071024;
+    color: white;
+    font-size: 1.1em;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff69f8;
+    box-shadow: 0 0 12px #ff69f8;
+}
+
+button {
+    width: 90%;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #38dff8, #2563eb);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #38dff8;
+}
+
+#resetBtn {
+    background: linear-gradient(90deg, #9333ea, #ff69f8);
+}
+
+#feedback {
+    min-height: 90px;
+    padding: 25px;
+    margin: 15px 0;
+    border: 2px solid #60fa7b;
+    border-radius: 15px;
+    color: #60fa7b;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: rgba(20, 80, 40, 0.15);
+}
+
+#attemptsLeft {
+    color: #ffd84d;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#previousGuesses {
+    min-height: 120px;
+    padding: 20px;
+    border: 2px dashed #ffd84d;
+    border-radius: 15px;
+    color: #ffd84d;
+    font-size: 1.3em;
+    line-height: 1.8;
+    background-color: rgba(255, 216, 77, 0.08);
+}
+
+.instructions {
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: rgba(4, 12, 35, 0.85);
+    border: 1px solid #38dff8;
+}
+
+.instructions h3 {
+    color: #ff69f8;
+}
+
+footer {
+    padding: 20px;
+    color: #cccccc;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 800px) {
+    .scoreboard,
+    .game-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guess-area,
+    .feedback-area,
+    .attempts-area,
+    .score-card {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
