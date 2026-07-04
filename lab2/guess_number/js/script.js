@@ -64,7 +64,7 @@ function checkGuess() {
         if (attempts == 7) {
             losses++;
             document.querySelector("#losses").textContent = losses;
-            feedback.textContent = "Sorry, you lost!";
+            feedback.textContent = "Sorry, you lost! The number was " + randomNumber;
             feedback.style.color = "red";
             gameOver();
         } else if (playerGuess > randomNumber) {
