@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>US Geography Quiz</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </head>
+
+    <body class="text-center">
+
+        <h1 class="display-4 p-4 bg-primary text-white rounded-bottom shadow">US Geography Quiz</h1>
+
+        <div class="container mt-4">
+            <div class="card shadow-sm p-4">
+
+                <!-- Question 1 Header--> 
+                <h3><span id="markImg1"></span>What is the capital of California?</h3>
+                <input type="text" id="q1" class="form-control w-50 mx-auto">
+                <br><br>
+                <div id="q1Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 2 Header--> 
+                <h3><span id="markImg2"></span>What is the longest river?</h3>
+                <select id="q2" class="form-select w-50 mx-auto">
+                    <option value="">Select One</option>
+                    <option value="ms">Mississippi</option>
+                    <option value="mo">Missouri</option>
+                    <option value="co">Colorado</option>
+                    <option value="de">Delaware</option>
+                </select>
+                <br><br>
+                <div id="q2Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 3 Header--> 
+                <h3><span id="markImg3"></span>What presidents are carved into Mount Rushmore?</h3>
+                <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson</label>
+                <input type="checkbox" id="Franklin"> <label for="Franklin">B. Franklin</label>
+                <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
+                <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
+                <br><br>
+                <div id="q3Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 4 Header-->     
+                <h3><span id="markImg4"></span>What is the smallest US State?</h3>
+                <div id="q4Choices"></div>
+                <br><br>
+                <div id="q4Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 5 Header-->
+                <h3><span id="markImg5"></span>What is the largest US State?</h3>
+                <input type="radio" name="q5" id="ca" value="California"> <label for="ca">California</label>
+                <input type="radio" name="q5" id="ak" value="Alaska"> <label for="ak">Alaska</label>
+                <input type="radio" name="q5" id="tx" value="Texas"> <label for="tx">Texas</label>
+                <input type="radio" name="q5" id="nm" value="New Mexico"> <label for="nm">New Mexico</label>
+                <br><br>
+                <div id="q5Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 6 Header -->
+                <h3><span id="markImg6"></span>What is the biggest lake in the US?</h3>
+                <select id="q6" class="form-select w-50 mx-auto">
+                    <option value="">Select One</option>
+                    <option value="le">Lake Erie</option>
+                    <option value="lh">Lake Huron</option>
+                    <option value="ls">Lake Superior</option>
+                    <option value="lm">Lake Michigan</option>
+                </select>
+                <br><br>
+                <div id="q6Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 7 Header--> 
+                <h3><span id="markImg7"></span>How many States are there in the US?</h3>
+                <input type="text" id="q7" class="form-control w-50 mx-auto">
+                <br><br>
+                <div id="q7Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 8 Header -->    
+                <h3><span id="markImg8"></span>What State has the tallest mountain?</h3>
+                <div id="q8Choices"></div>
+                <br><br>
+                <div id="q8Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 9 Header--> 
+                <h3><span id="markImg9"></span>What were the last 2 States to join the US?</h3>
+                <input type="checkbox" id="q9Hawaii"> <label for="q9Hawaii">Hawaii</label>
+                <input type="checkbox" id="q9Alaska"> <label for="q9Alaska">Alaska</label>
+                <input type="checkbox" id="q9PuertoRico"> <label for="q9PuertoRico">Puerto Rico</label>
+                <input type="checkbox" id="q9Arizona"> <label for="q9Arizona">Arizona</label>
+                <br><br>
+                <div id="q9Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+                <!-- Question 10 Header--> 
+                <h3><span id="markImg10"></span>Which State borders the most States?</h3>
+                <select id="q10" class="form-select w-50 mx-auto">
+                    <option value="">Select One</option>
+                    <option value="tn">Tennessee</option>
+                    <option value="mo">Missouri</option>
+                    <option value="ky">Kentucky</option>
+                    <option value="co">Colorado</option>
+                    <option value="ut">Utah</option>
+                </select>
+                <br><br>
+                <div id="q10Feedback" class="fw-bold mt-2"></div>
+                <br><br>
+
+            </div>
+        </div>
+
+        <!-- Final Results -->
+         <div class="container mt-4 mb-5">
+            <div class="card shadow-sm p-4">
+
+                <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+                <button class="btn btn-primary btn-lg mt-3 px-5">Submit Quiz</button>
+                <br>
+                <h2 id="totalScore" class="text-info"></h2>
+                <h3 id="congratsMessage"></h3>
+                <p><span id="totalAttempts" class="badge bg-secondary fs-6"></span></p>
+
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
