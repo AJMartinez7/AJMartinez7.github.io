@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HW 3: Fetch and Web APIs</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <form>
+
+        <!-- Web Page Title Header -->
+        <h1>Earthquake Finder</h1>
+
+        <!-- User Instructions -->
+        <h4>Search for earthquakes by date range and minimum magnitude</h4>
+
+        <!-- Start Date Input -->
+        <label>Start Date
+            <input type="date" id="startDate" name="startDate">
+        </label>
+
+        <!-- End Date Input -->
+        <label>End Date:
+            <input type="date" id="endDate" name="endDate">
+        </label>
+
+        <!-- Minimum Magnitude Input -->
+        <label>Minimum Magnitude:
+            <input type="number" id="minMag" name="minMag" min="0" max="10" step="0.1">
+        </label>
+
+        <!-- Button -->
+        <br><br>
+        <button type="submit" id="searchButton">Search Earthquakes</button>
+
+        <!-- Result -->
+        <div id="results"></div>
+
+        </form>
+        
+    </body>
+
+</html>

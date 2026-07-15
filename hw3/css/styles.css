@@ -1,0 +1,86 @@
+/* Entire page */
+body {
+    background-color: #eef4f8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+/* Main title */
+h1 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+/* Instructions */
+h4 {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form */
+form {
+    background: white;
+    width: 850px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,.15);
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Inputs */
+input {
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+/* Search Button */
+#searchButton {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover */
+#searchButton:hover {
+    background-color: #084298;
+}
+
+/* Results container */
+#results {
+    margin-top: 30px;
+}
+
+/* Earthquake cards */
+.earthquake-card {
+    background: #f8f9fa;
+    border-left: 6px solid #0d6efd;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.12);
+}
+
+/* Links */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
